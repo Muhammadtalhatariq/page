@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: gilroy;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+
+}
+#main{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    /*background-color: blueviolet;*/
+}
+#left{
+    position: relative;
+    width: 40%;
+    height: 100%;
+    /*background-color: brown;*/
+}
+#left #textcenter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#textcenter h1{
+    font-size: 90px;
+    font-weight: 900;
+}
+#textcenter p{
+    opacity: .6;
+    font-size: 15px;
+    line-height: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: gilroy;
+}
+#textcenter a{
+    color: black;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    opacity: .6;
+}
+#lnav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 30px;
+}
+#lnavr {
+    display: flex;
+    align-items: center;
+}
+#lnavr  a{
+    margin-right: 20px;
+    font-weight: 900;
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+}
+#right{
+    width: 60%;
+    height: 100%;
+    background-color: blue;
+}
+#rtop{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    background-color: burlywood;
+}
+#rbottom{
+    width: 100%;
+    height: 50%;
+    background-image: url(/images/ora2.webp);
+    background-color:palevioletred;
+    background-position:20% 80%;
+    background-size: cover;
+}
+#rtopleft{
+    width: 55%;
+    background-image: url(/images/photo-2.webp);
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-color: aqua;
+}
+#rtopright{
+    width: 45%;
+    height: 100%;
+    background-image: url(/images/orange.webp);
+    background-position: bottom;
+    background-size: cover;
+}
+@media(max-width: 500px){
+    #main{
+        flex-direction: column;
+    }
+    #main #left{
+        width: 100%;
+    }
+    #main #right
+    {
+        width: 100%;
+    }
+}
+    
